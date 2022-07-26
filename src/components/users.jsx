@@ -45,7 +45,7 @@ const Users = () => {
                                 <tr key={user._id}>
                                     <td>{user.name}</td>
                                     <td>{user.qualities.map((test) => {
-                                        return <span key={Math.random() * 10} className = {'btn btn-' + test.color}> {test.name + ' '}</span>;
+                                        return <span key={Math.random() * 10} className = {'badge me-2 bg-' + test.color}> {test.name + ' '}</span>;
                                     })}</td>
                                     <td>{user.profession.name}</td>
                                     <td>{user.completedMeetings}</td>
