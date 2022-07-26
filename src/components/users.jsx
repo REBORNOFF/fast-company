@@ -16,7 +16,7 @@ const Users = () => {
     }
 
     const deleteUser = (userId) => {
-        setUsers(users.filter(user => user._id !== userId));
+        setUsers((prevState) => prevState.filter(user => user._id !== userId));
         setNumberOfPeople((prevState) => prevState - 1)
     }
 
